@@ -1,9 +1,19 @@
+import { heroui } from "@heroui/theme";
 import type { Config } from "tailwindcss";
 
 export default {
-  content: ["./index.html", "./src/**/*.{ts,tsx,mdx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{ts,tsx,mdx}",
+
+    // single component styles
+    "./node_modules/@heroui/theme/dist/components/button.js",
+
+    // or you can use a glob pattern (multiple component styles)
+    // "./node_modules/@heroui/theme/dist/components/(button|snippet|code|input).js",
+  ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [heroui()],
 } satisfies Config;
