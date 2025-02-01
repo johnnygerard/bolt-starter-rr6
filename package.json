@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@heroui/button": "^2.2.10",
     "@heroui/system": "^2.4.7",
     "@heroui/theme": "^2.4.6",
     "@phosphor-icons/react": "^2.1.7",
