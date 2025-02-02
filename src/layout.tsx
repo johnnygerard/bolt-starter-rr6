@@ -4,7 +4,7 @@ import { Link, Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="flex min-h-screen flex-col">
       <nav>
         <ul>
           <li>
@@ -14,7 +14,9 @@ const Layout = () => {
           </li>
         </ul>
       </nav>
-      <Outlet />
+      <div className="grid flex-1 place-items-center">
+        <Outlet />
+      </div>
     </div>
   );
 };
