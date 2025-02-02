@@ -1,5 +1,6 @@
 import { heroui } from "@heroui/theme";
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
   content: [
@@ -9,6 +10,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      sans: ["Inter", ...defaultTheme.fontFamily.sans],
+    },
   },
   plugins: [heroui()],
 } satisfies Config;
