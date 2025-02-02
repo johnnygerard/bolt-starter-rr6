@@ -15,9 +15,9 @@ const Layout = () => {
           </Link>
         </NavbarBrand>
       </Navbar>
-      <div className="grid flex-1 place-items-center">
+      <main className="grid flex-1 place-items-center">
         <Outlet />
-      </div>
+      </main>
     </div>
   );
 };
