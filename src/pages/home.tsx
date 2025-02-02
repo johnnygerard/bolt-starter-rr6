@@ -1,11 +1,7 @@
 import { memo } from "react";
 
 const HomePage = () => {
-  return (
-    <div>
-      <h1>Home Page</h1>
-    </div>
-  );
+  return <h1>Homepage</h1>;
 };
 
 export default memo(HomePage);
