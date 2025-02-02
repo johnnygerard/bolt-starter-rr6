@@ -4,55 +4,62 @@ HeroUI (formerly known as NextUI) is a UI library for React that helps you build
 
 HeroUI's primary goal is to streamline the development process, offering a beautiful and adaptable system design for an enhanced user experience.
 
-## List of HeroUI Components
+## How to Use the HeroUI CLI
 
-| Name              | Import                                                                                                                                     |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Accordion         | `import {Accordion, AccordionItem} from "@heroui/accordion";`                                                                              |
-| Autocomplete      | `import {Autocomplete,AutocompleteSection,AutocompleteItem} from "@heroui/autocomplete";`                                                  |
-| Alert             | `import {Alert} from "@heroui/alert";`                                                                                                     |
-| Avatar            | `import {Avatar, AvatarGroup, AvatarIcon} from "@heroui/avatar";`                                                                          |
-| Badge             | `import {Badge} from "@heroui/badge";`                                                                                                     |
-| Breadcrumbs       | `import {Breadcrumbs, BreadcrumbItem} from "@heroui/breadcrumbs";`                                                                         |
-| Button            | `import {Button, ButtonGroup} from "@heroui/button";`                                                                                      |
-| Calendar          | `import {Calendar} from "@heroui/calendar";`                                                                                               |
-| Card              | `import {Card, CardHeader, CardBody, CardFooter} from "@heroui/card";`                                                                     |
-| Checkbox          | `import {Checkbox} from "@heroui/checkbox";`                                                                                               |
-| Checkbox Group    | `import {CheckboxGroup, Checkbox} from "@heroui/checkbox";`                                                                                |
-| Chip              | `import {Chip} from "@heroui/chip";`                                                                                                       |
-| Circular Progress | `import {CircularProgress} from "@heroui/progress";`                                                                                       |
-| Code              | `import {Code} from "@heroui/code";`                                                                                                       |
-| Date Input        | `import {DateInput} from "@heroui/date-input";`                                                                                            |
-| Date Picker       | `import {DatePicker} from "@heroui/date-picker";`                                                                                          |
-| Date Range Picker | `import {DateRangePicker} from "@heroui/date-picker";`                                                                                     |
-| Divider           | `import {Divider} from "@heroui/divider";`                                                                                                 |
-| Dropdown          | `import {  Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem} from "@heroui/dropdown";`                           |
-| Drawer            | `import {  Drawer,  DrawerContent,  DrawerHeader,  DrawerBody,  DrawerFooter} from "@heroui/drawer";`                                      |
-| Form              | `import {Form} from "@heroui/form";`                                                                                                       |
-| Image             | `import {Image} from "@heroui/image";`                                                                                                     |
-| Input             | `import {Input} from "@heroui/input";`                                                                                                     |
-| Input OTP         | `import {InputOtp} from "@heroui/input-otp";`                                                                                              |
-| Kbd               | `import {Kbd} from "@heroui/kbd";`                                                                                                         |
-| Link              | `import {Link} from "@heroui/link";`                                                                                                       |
-| Listbox           | `import {  Listbox,  ListboxSection,  ListboxItem} from "@heroui/listbox";`                                                                |
-| Modal             | `import {  Modal,  ModalContent,  ModalHeader,  ModalBody,  ModalFooter} from "@heroui/modal";`                                            |
-| Navbar            | `import {  Navbar,   NavbarBrand,   NavbarContent,   NavbarItem,   NavbarMenuToggle,  NavbarMenu,  NavbarMenuItem} from "@heroui/navbar";` |
-| Pagination        | `import {Pagination, PaginationItem, PaginationCursor} from "@heroui/pagination";`                                                         |
-| Popover           | `import {Popover, PopoverTrigger, PopoverContent} from "@heroui/popover";`                                                                 |
-| Progress          | `import {Progress} from "@heroui/progress";`                                                                                               |
-| Radio Group       | `import {RadioGroup, Radio} from "@heroui/radio";`                                                                                         |
-| Range Calendar    | `import {RangeCalendar} from "@heroui/calendar";`                                                                                          |
-| Scroll Shadow     | `import {ScrollShadow} from "@heroui/scroll-shadow";`                                                                                      |
-| Select            | `import {Select, SelectSection, SelectItem} from "@heroui/select";`                                                                        |
-| Skeleton          | `import {Skeleton} from "@heroui/skeleton";`                                                                                               |
-| Slider            | `import {Slider} from "@heroui/slider";`                                                                                                   |
-| Snippet           | `import {Snippet} from "@heroui/snippet";`                                                                                                 |
-| Spacer            | `import {Spacer} from "@heroui/spacer";`                                                                                                   |
-| Spinner           | `import {Spinner} from "@heroui/spinner";`                                                                                                 |
-| Switch            | `import {Switch} from "@heroui/switch";`                                                                                                   |
-| Table             | `import {  Table,  TableHeader,  TableBody,  TableColumn,  TableRow,  TableCell} from "@heroui/table";`                                    |
-| Tabs              | `import {Tabs, Tab} from "@heroui/tabs";`                                                                                                  |
-| Textarea          | `import {Textarea} from "@heroui/input";`                                                                                                  |
-| Time Input        | `import {TimeInput} from "@heroui/date-input";`                                                                                            |
-| Tooltip           | `import {Tooltip} from "@heroui/tooltip";`                                                                                                 |
-| User              | `import {User} from "@heroui/user";`                                                                                                       |
+To add the `Link` component run `npx heroui-cli add link`.  
+To remove it, run `npx heroui-cli remove link`.
+
+The following table lists the CLI commands to add components to your project.  
+Note that some packages include multiple components (e.g. `Checkbox` and `CheckboxGroup` in `@heroui/checkbox`).
+
+| CLI Command                      | Import Statement                                                                                                                           |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| npx heroui-cli add accordion     | `import {Accordion, AccordionItem} from "@heroui/accordion";`                                                                              |
+| npx heroui-cli add alert         | `import {Alert} from "@heroui/alert";`                                                                                                     |
+| npx heroui-cli add autocomplete  | `import {Autocomplete,AutocompleteSection,AutocompleteItem} from "@heroui/autocomplete";`                                                  |
+| npx heroui-cli add avatar        | `import {Avatar, AvatarGroup, AvatarIcon} from "@heroui/avatar";`                                                                          |
+| npx heroui-cli add badge         | `import {Badge} from "@heroui/badge";`                                                                                                     |
+| npx heroui-cli add breadcrumbs   | `import {Breadcrumbs, BreadcrumbItem} from "@heroui/breadcrumbs";`                                                                         |
+| npx heroui-cli add button        | `import {Button, ButtonGroup} from "@heroui/button";`                                                                                      |
+| npx heroui-cli add calendar      | `import {Calendar,RangeCalendar} from "@heroui/calendar";`                                                                                 |
+| npx heroui-cli add card          | `import {Card, CardHeader, CardBody, CardFooter} from "@heroui/card";`                                                                     |
+| npx heroui-cli add checkbox      | `import {CheckboxGroup, Checkbox} from "@heroui/checkbox";`                                                                                |
+| npx heroui-cli add chip          | `import {Chip} from "@heroui/chip";`                                                                                                       |
+| npx heroui-cli add code          | `import {Code} from "@heroui/code";`                                                                                                       |
+| npx heroui-cli add date-input    | `import {DateInput,TimeInput} from "@heroui/date-input";`                                                                                  |
+| npx heroui-cli add date-picker   | `import {DatePicker,DateRangePicker} from "@heroui/date-picker";`                                                                          |
+| npx heroui-cli add divider       | `import {Divider} from "@heroui/divider";`                                                                                                 |
+| npx heroui-cli add drawer        | `import {  Drawer,  DrawerContent,  DrawerHeader,  DrawerBody,  DrawerFooter} from "@heroui/drawer";`                                      |
+| npx heroui-cli add dropdown      | `import {  Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem} from "@heroui/dropdown";`                           |
+| npx heroui-cli add form          | `import {Form} from "@heroui/form";`                                                                                                       |
+| npx heroui-cli add image         | `import {Image} from "@heroui/image";`                                                                                                     |
+| npx heroui-cli add input         | `import {Input,Textarea} from "@heroui/input";`                                                                                            |
+| npx heroui-cli add input-otp     | `import {InputOtp} from "@heroui/input-otp";`                                                                                              |
+| npx heroui-cli add kbd           | `import {Kbd} from "@heroui/kbd";`                                                                                                         |
+| npx heroui-cli add link          | `import {Link} from "@heroui/link";`                                                                                                       |
+| npx heroui-cli add listbox       | `import {  Listbox,  ListboxSection,  ListboxItem} from "@heroui/listbox";`                                                                |
+| npx heroui-cli add modal         | `import {  Modal,  ModalContent,  ModalHeader,  ModalBody,  ModalFooter} from "@heroui/modal";`                                            |
+| npx heroui-cli add navbar        | `import {  Navbar,   NavbarBrand,   NavbarContent,   NavbarItem,   NavbarMenuToggle,  NavbarMenu,  NavbarMenuItem} from "@heroui/navbar";` |
+| npx heroui-cli add pagination    | `import {Pagination, PaginationItem, PaginationCursor} from "@heroui/pagination";`                                                         |
+| npx heroui-cli add popover       | `import {Popover, PopoverTrigger, PopoverContent} from "@heroui/popover";`                                                                 |
+| npx heroui-cli add progress      | `import {CircularProgress,Progress} from "@heroui/progress";`                                                                              |
+| npx heroui-cli add radio         | `import {RadioGroup, Radio} from "@heroui/radio";`                                                                                         |
+| npx heroui-cli add scroll-shadow | `import {ScrollShadow} from "@heroui/scroll-shadow";`                                                                                      |
+| npx heroui-cli add select        | `import {Select, SelectSection, SelectItem} from "@heroui/select";`                                                                        |
+| npx heroui-cli add skeleton      | `import {Skeleton} from "@heroui/skeleton";`                                                                                               |
+| npx heroui-cli add slider        | `import {Slider} from "@heroui/slider";`                                                                                                   |
+| npx heroui-cli add snippet       | `import {Snippet} from "@heroui/snippet";`                                                                                                 |
+| npx heroui-cli add spinner       | `import {Spinner} from "@heroui/spinner";`                                                                                                 |
+| npx heroui-cli add switch        | `import {Switch} from "@heroui/switch";`                                                                                                   |
+| npx heroui-cli add table         | `import {  Table,  TableHeader,  TableBody,  TableColumn,  TableRow,  TableCell} from "@heroui/table";`                                    |
+| npx heroui-cli add tabs          | `import {Tabs, Tab} from "@heroui/tabs";`                                                                                                  |
+| npx heroui-cli add tooltip       | `import {Tooltip} from "@heroui/tooltip";`                                                                                                 |
+| npx heroui-cli add user          | `import {User} from "@heroui/user";`                                                                                                       |
+
+The following components should not be added using the CLI:
+
+| Component Name | Reason                                                                                                                |
+| -------------- | --------------------------------------------------------------------------------------------------------------------- |
+| menu           | The `menu` component is undocumented.                                                                                 |
+| ripple         | Required by some components like `button`. It is already installed.                                                   |
+| spacer         | This is a layout component that can be replaced with Tailwind CSS spacing utilities (e.g., `space-x-4`, `space-y-4`). |
