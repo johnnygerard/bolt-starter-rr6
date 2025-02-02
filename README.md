@@ -24,3 +24,7 @@ This is a starter template for AI-driven development with Bolt.
 - **Code Formatter**: [Prettier](https://prettier.io/)
 - **Code Linter**: [ESLint](https://eslint.org/)
 - **Type Checker**: [TypeScript](https://www.typescriptlang.org/)
+
+## Copyright
+
+© 2025 Johnny Gérard
