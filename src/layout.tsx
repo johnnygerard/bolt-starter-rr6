@@ -9,7 +9,7 @@ const Layout = () => {
         <ul>
           <li>
             <Link to="/">
-              <House size="2rem" />
+              <House />
             </Link>
           </li>
         </ul>
