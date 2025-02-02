@@ -14,5 +14,7 @@ export default {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],
     },
   },
+  // Required by HeroUI (Tailwind CSS v3.4.1 replaced it with the `selector` strategy)
+  darkMode: "class",
   plugins: [heroui()],
 } satisfies Config;
